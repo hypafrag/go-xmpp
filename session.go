@@ -48,7 +48,9 @@ func NewSession(conn net.Conn, o Config) (net.Conn, *Session, error) {
 
 	// auth
 	s.auth(o)
-	s.reset(tlsConn, tlsConn, o)
+	if s.TlsEnabled {
+		s.reset(tlsConn, tlsConn, o)
+	}
 
 	// bind resource and 'start' XMPP session
 	s.bind(o)
