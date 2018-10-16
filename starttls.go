@@ -1,4 +1,4 @@
-package xmpp // import "fluux.io/xmpp"
+package xmpp
 
 import (
 	"crypto/tls"

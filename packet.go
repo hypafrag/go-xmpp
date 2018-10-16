@@ -1,4 +1,4 @@
-package xmpp // import "fluux.io/xmpp"
+package xmpp
 
 type Packet interface {
 	Name() string

@@ -1,4 +1,4 @@
-package xmpp // import "fluux.io/xmpp"
+package xmpp
 
 const (
 	NSStream    = "http://etherx.jabber.org/streams"
